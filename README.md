@@ -1,4 +1,3 @@
-# GSoC_tests
 # Monte Carlo Integration
 # *Easy*
 ---
