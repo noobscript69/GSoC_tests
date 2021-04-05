@@ -1,7 +1,7 @@
 # Monte Carlo Integration
 ---
 # *Easy*
----
+
 Test: Easy: compile and run volesti. Read the CRAN package [documentation](https://cran.rstudio.com/web/packages/volesti/volesti.pdf), generate a random H-polytope and compute its volume.
 
 - Compiled and ran volesti tests in C++ interface using cmake, make and ctest. Also installed all package dependencies like Rcpp, RcppEigen, BH etc and used devtools to install volesti Rcpp Package
@@ -20,7 +20,7 @@ summary(as.numeric(volumes))
 ```
 
 # *Medium*
----
+
 Test: Use the R package [cubature](https://cran.r-project.org/web/packages/cubature/index.html) to compute the integral of f(x) = exp^{-a||x||^2} over the cube [-1,1]^n, for various values of a and dimension n until it crashes.
 
 - Installed R package ``cubeture`` and used ``cubeture`` library to compute the integral of f(x) = exp^{-a||x||^2} over the cube [-1,1]^n.
@@ -40,7 +40,7 @@ hcubature(testFnWeb, rep(-1,n), rep(1,n), tol=1e-4)
 ```
 
 # *Hard*
----
+
 Test: Use volesti to approximate the same integrals as in previous test by [simple Monte Carlo](https://en.wikipedia.org/wiki/Monte_Carlo_integration) based on uniform sampling and by Importance Sampling using multivariate spherical Gaussian. Comment on the accuracy and run-time.
 
 - Used library volesti to compute integral f(x) = exp^{-a||x||^2} till 100th dimension using uniform and gaussian sampling.
