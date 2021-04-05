@@ -66,10 +66,15 @@ myfunction <- function(x) {
 P = gen_cube(d, 'H')
 points = sample_points(P1, random_walk = list("walk" = "Baw"), n = 10000,
                         seed = 5)
+plot(points[1,],points[2,])
+                       
 
 ## SIMPLE MONTE CARLO USING GAUSSIAN DISTRIBUTION
 
 P <- gen_cube(d,"H")
 
 points = sample_points(P, n=10000 , distribution = list("density" = "gaussian", "variance" = 1)
+
+plot(points[1,],points[2,])
+
 ```
