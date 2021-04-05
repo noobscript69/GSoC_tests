@@ -43,5 +43,6 @@ P <- gen_cube(d,"H")
 points = sample_points(P, n=10000 , distribution = list("density" = "gaussian", "variance" = 1)
 
 
+plot(points[1,],points[2,])
 
 
